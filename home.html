@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSMIS</title>
+<link rel="stylesheet" href="lib/w3.css">
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="lib/PSMISV12b.css"/>
+<script id="applicationScript" type="text/javascript" src="lib/PSMISV12b.js"></script>
+<script id="applicationScript" type="text/javascript" src="lib/PSMISV12h2.js"></script>
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../officeOfAGtemplates/js/popper.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+function CheckDecimal(evt) {
+          var charCode = (evt.which) ? evt.which : event.keyCode
+          if (charCode == 46) {
+              var inputValue = $("#floor").val();
+              var count = (inputValue.match(/'.'/g) || []).length;
+              if (count < 1) {
+                  if (inputValue.indexOf('.') < 1) {
+                      return true;
+                  }
+                  return false;
+              } else {
+                  return false;
+              }
+          }
+          if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57)) {
+              return false;
+          }
+          return true;
+      }
+
+
+    </script>
+</head>
+<body>
+<div id="dd">
+	<svg class="Rectangle_2">
+		<rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1376" height="213">
+		</rect>
+	</svg>
+	<svg class="Rectangle_4">
+		<rect id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="1376" height="116">
+		</rect>
+	</svg>
+	<div id="Pension_Settlement_Management_">
+		<span>Pension Settlement Management Information System</span>
+	</div>
+	<svg class="Rectangle_6">
+		<rect id="Rectangle_6" rx="0" ry="0" x="0" y="0" width="143" height="45">
+		</rect>
+	</svg>
+	<div id="Scroll_Group_1">
+		<svg class="Rectangle_6_k">
+			<rect id="Rectangle_6_k" rx="0" ry="0" x="0" y="0" width="1233" height="45">
+			</rect>
+		</svg>
+	</div>
+	<svg class="Icon_awesome-home" viewBox="-0.001 2.254 40.503 31.496">
+		<path id="Icon_awesome-home" d="M 19.71351623535156 10.42453098297119 L 6.75 21.10148429870605 L 6.75 32.625 C 6.75 33.24631881713867 7.253679752349854 33.75 7.875 33.75 L 15.75421905517578 33.72961044311523 C 16.37334251403809 33.72651672363281 16.87360191345215 33.22373962402344 16.87359428405762 32.60461044311523 L 16.87359428405762 25.875 C 16.87359428405762 25.2536792755127 17.37727355957031 24.75 17.99859428405762 24.75 L 22.49859428405762 24.75 C 23.11991500854492 24.75 23.62359428405762 25.2536792755127 23.62359428405762 25.875 L 23.62359428405762 32.59968566894531 C 23.62265968322754 32.89866256713867 23.74077224731445 33.18571472167969 23.95185279846191 33.39745712280273 C 24.16293334960938 33.60919570922852 24.44961547851563 33.72820281982422 24.74859428405762 33.72820281982422 L 32.625 33.75 C 33.24631881713867 33.75 33.75 33.24631881713867 33.75 32.625 L 33.75 21.09375 L 20.78929710388184 10.42453098297119 C 20.47534942626953 10.17147254943848 20.0274658203125 10.17147254943848 19.71351623535156 10.42453098297119 Z M 40.19062423706055 17.68148422241211 L 34.3125 12.83625030517578 L 34.3125 3.097265720367432 C 34.3125 2.631275415420532 33.93474197387695 2.253515720367432 33.46875 2.253515720367432 L 29.53125 2.253515720367432 C 29.06525993347168 2.253515720367432 28.6875 2.631275653839111 28.6875 3.097265958786011 L 28.6875 8.202655792236328 L 22.39242172241211 3.0234375 C 21.14653778076172 1.998199701309204 19.34924697875977 1.998199701309204 18.10336112976074 3.0234375 L 0.3051562607288361 17.68148422241211 C -0.05417710542678833 17.97848320007324 -0.1045555472373962 18.51061058044434 0.1926565170288086 18.8697681427002 L 1.985625028610229 21.04945373535156 C 2.127959966659546 21.22252655029297 2.333295822143555 21.33187103271484 2.556345701217651 21.35337066650391 C 2.779395580291748 21.37487030029297 3.001836538314819 21.30676078796387 3.174609661102295 21.1640625 L 19.71351623535156 7.541718482971191 C 20.0274658203125 7.288661003112793 20.47534942626953 7.288661003112793 20.78929901123047 7.541719436645508 L 37.32890701293945 21.1640625 C 37.68806457519531 21.46127319335938 38.22019195556641 21.4108943939209 38.51718902587891 21.05156326293945 L 40.31015777587891 18.87187576293945 C 40.45273590087891 18.69840240478516 40.52028274536133 18.47525405883789 40.49784851074219 18.25183296203613 C 40.47541427612305 18.02840995788574 40.36484909057617 17.82314682006836 40.19063186645508 17.68148422241211 Z">
+		</path>
+	</svg>
+	<div id="c_2020_NIC_Telangana_Hyderabad">
+		<span>(c) 2020 NIC Telangana, Hyderabad</span>
+	</div>
+	<svg class="Line_1" viewBox="0 0 1920 2">
+		<path id="Line_1" d="M 0 2 L 1920 0">
+		</path>
+	</svg>
+	<div id="Scroll_Group_2">
+		<svg class="Rectangle_7">
+			<rect id="Rectangle_7" rx="0" ry="0" x="0" y="0" width="1376" height="527">
+			</rect>
+		</svg>
+	</div>
+	<svg class="Line_2" viewBox="0 0 1920 1">
+		<path id="Line_2" d="M 0 0 L 1920 0">
+		</path>
+	</svg>
+</div>
+<div class="Icon_awesome-home" viewBox="-0.001 2.254 40.503 31.496">
+	<a href="home.html">-</a>
+</div>
+
+<div id="Scroll_Group_1" class="Rectangle_6_k">
+
+
+	<div id="Noti">
+    	<div class="w3-dropdown-hover">
+      	<button class="w3-button">Notifications</button>
+      	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">View 1</a>
+        <a href="#" class="w3-bar-item w3-button">View 2</a>
+        <a href="#" class="w3-bar-item w3-button">View 3 etc.</a>
+      	</div>
+	</div>
+
+	<div="Beni">
+      	<div class="w3-dropdown-hover">
+      	<button class="w3-button">Beneficiary</button>
+      	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Registration</a>
+        <a href="part1.html" target="_self" class="w3-bar-item w3-button">Part I</a>
+      	</div>
+	</div>
+
+	<div="ddo">
+      	<div class="w3-dropdown-hover">
+      	<button class="w3-button">Head of Office & DDO</button>
+      	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Notifications</a>
+        <a href="part2a.html" class="w3-bar-item w3-button">Part IIA</a>
+	<a href="part2b.html" class="w3-bar-item w3-button">Part IIB</a>
+	<a href="annexure1.html" class="w3-bar-item w3-button">Annexure I</a>
+	<a href="annexure2.html" class="w3-bar-item w3-button">Annexure II</a>
+      	</div>
+	</div>
+
+	
+	<div="ag">
+      	<div class="w3-dropdown-hover">
+      	<button class="w3-button">Office of the AG</button>
+      	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Verification</a>
+        <a href="#" class="w3-bar-item w3-button">Authorization</a>
+	<a href="#" class="w3-bar-item w3-button">PPO issuance</a>
+      	</div>
+	</div>
+
+	<div="dta">
+      	<div class="w3-dropdown-hover">
+      	<button class="w3-button">Treasury & Accounts</button>
+      	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Directorate</a>
+        <a href="#" class="w3-bar-item w3-button">District</a>
+	<a href="#" class="w3-bar-item w3-button">Sub Treasury</a>
+      	</div>
+	</div>
+	
+</div>
+</body>
+</html>

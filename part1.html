@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSMIS</title>
+<link rel="stylesheet" href="lib/w3.css">
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="lib/PSMISV12b.css"/>
+<script id="applicationScript" type="text/javascript" src="lib/PSMISV12b.js"></script>
+<script id="applicationScript" type="text/javascript" src="lib/PSMISV12h2.js"></script>
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../officeOfAGtemplates/js/popper.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+function CheckDecimal(evt) {
+          var charCode = (evt.which) ? evt.which : event.keyCode
+          if (charCode == 46) {
+              var inputValue = $("#floor").val();
+              var count = (inputValue.match(/'.'/g) || []).length;
+              if (count < 1) {
+                  if (inputValue.indexOf('.') < 1) {
+                      return true;
+                  }
+                  return false;
+              } else {
+                  return false;
+              }
+          }
+          if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57)) {
+              return false;
+          }
+          return true;
+      }
+
+
+    </script>
+</head>
+<body>
+<div id="dd">
+	<svg class="Rectangle_2">
+		<rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1376" height="213">
+		</rect>
+	</svg>
+	<!-----svg class="Rectangle_4">
+		<rect id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="1376" height="116">
+		</rect>
+	</svg-------------------------->
+	<div id="Pension_Settlement_Management_">
+		<span>Pension Settlement Management Information System</span>
+	</div>
+	<svg class="Rectangle_6">
+		<rect id="Rectangle_6" rx="0" ry="0" x="0" y="0" width="143" height="45">
+		</rect>
+	</svg>
+	<div id="Scroll_Group_1">
+		<svg class="Rectangle_6_k">
+			<rect id="Rectangle_6_k" rx="0" ry="0" x="0" y="0" width="1233" height="45">
+			</rect>
+		</svg>
+	</div>
+	<svg class="Icon_awesome-home" viewBox="-0.001 2.254 40.503 31.496">
+		<path id="Icon_awesome-home" d="M 19.71351623535156 10.42453098297119 L 6.75 21.10148429870605 L 6.75 32.625 C 6.75 33.24631881713867 7.253679752349854 33.75 7.875 33.75 L 15.75421905517578 33.72961044311523 C 16.37334251403809 33.72651672363281 16.87360191345215 33.22373962402344 16.87359428405762 32.60461044311523 L 16.87359428405762 25.875 C 16.87359428405762 25.2536792755127 17.37727355957031 24.75 17.99859428405762 24.75 L 22.49859428405762 24.75 C 23.11991500854492 24.75 23.62359428405762 25.2536792755127 23.62359428405762 25.875 L 23.62359428405762 32.59968566894531 C 23.62265968322754 32.89866256713867 23.74077224731445 33.18571472167969 23.95185279846191 33.39745712280273 C 24.16293334960938 33.60919570922852 24.44961547851563 33.72820281982422 24.74859428405762 33.72820281982422 L 32.625 33.75 C 33.24631881713867 33.75 33.75 33.24631881713867 33.75 32.625 L 33.75 21.09375 L 20.78929710388184 10.42453098297119 C 20.47534942626953 10.17147254943848 20.0274658203125 10.17147254943848 19.71351623535156 10.42453098297119 Z M 40.19062423706055 17.68148422241211 L 34.3125 12.83625030517578 L 34.3125 3.097265720367432 C 34.3125 2.631275415420532 33.93474197387695 2.253515720367432 33.46875 2.253515720367432 L 29.53125 2.253515720367432 C 29.06525993347168 2.253515720367432 28.6875 2.631275653839111 28.6875 3.097265958786011 L 28.6875 8.202655792236328 L 22.39242172241211 3.0234375 C 21.14653778076172 1.998199701309204 19.34924697875977 1.998199701309204 18.10336112976074 3.0234375 L 0.3051562607288361 17.68148422241211 C -0.05417710542678833 17.97848320007324 -0.1045555472373962 18.51061058044434 0.1926565170288086 18.8697681427002 L 1.985625028610229 21.04945373535156 C 2.127959966659546 21.22252655029297 2.333295822143555 21.33187103271484 2.556345701217651 21.35337066650391 C 2.779395580291748 21.37487030029297 3.001836538314819 21.30676078796387 3.174609661102295 21.1640625 L 19.71351623535156 7.541718482971191 C 20.0274658203125 7.288661003112793 20.47534942626953 7.288661003112793 20.78929901123047 7.541719436645508 L 37.32890701293945 21.1640625 C 37.68806457519531 21.46127319335938 38.22019195556641 21.4108943939209 38.51718902587891 21.05156326293945 L 40.31015777587891 18.87187576293945 C 40.45273590087891 18.69840240478516 40.52028274536133 18.47525405883789 40.49784851074219 18.25183296203613 C 40.47541427612305 18.02840995788574 40.36484909057617 17.82314682006836 40.19063186645508 17.68148422241211 Z">
+		</path>
+	</svg>
+	<!----------------div id="c_2020_NIC_Telangana_Hyderabad">
+		<span>(c) 2020 NIC Telangana, Hyderabad</span>
+	</div-------------------------------->
+	<!-------------svg class="Line_1" viewBox="0 0 1920 2">
+		<path id="Line_1" d="M 0 2 L 1920 0">
+		</path>
+	</svg-------------------------->
+	<div id="Scroll_Group_2">
+		<svg class="Rectangle_7">
+			<rect id="Rectangle_7" rx="0" ry="0" x="0" y="0" width="1376" height="527">
+			</rect>
+		</svg>
+	</div>
+	<svg class="Line_2" viewBox="0 0 1920 1">
+		<path id="Line_2" d="M 0 0 L 1920 0">
+		</path>
+	</svg>
+</div>
+<div class="Icon_awesome-home" viewBox="-0.001 2.254 40.503 31.496">
+	<a href="home.html">-</a>
+</div>
+
+<div id="Scroll_Group_1" class="Rectangle_6_k">
+
+
+	<div id="Noti">
+    	<div class="w3-dropdown-hover">
+      	<button class="w3-button">Notifications</button>
+      	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">View 1</a>
+        <a href="#" class="w3-bar-item w3-button">View 2</a>
+        <a href="#" class="w3-bar-item w3-button">View 3 etc.</a>
+      	</div>
+	</div>
+
+	<div="Beni">
+      	<div class="w3-dropdown-hover">
+      	<button class="w3-button">Beneficiary</button>
+      	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Registration</a>
+        <a href="part1.html" target="_self" class="w3-bar-item w3-button">Part I</a>
+      	</div>
+	</div>
+
+	<div="ddo">
+      	<div class="w3-dropdown-hover">
+      	<button class="w3-button">Head of Office & DDO</button>
+      	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Notifications</a>
+        <a href="part2a.html" class="w3-bar-item w3-button">Part IIA</a>
+	<a href="part2b.html" class="w3-bar-item w3-button">Part IIB</a>
+	<a href="annexure1.html" class="w3-bar-item w3-button">Annexure I</a>
+	<a href="annexure2.html" class="w3-bar-item w3-button">Annexure II</a>
+      	</div>
+	</div>
+
+	
+	<div="ag">
+      	<div class="w3-dropdown-hover">
+      	<button class="w3-button">Office of the AG</button>
+      	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Verification</a>
+        <a href="#" class="w3-bar-item w3-button">Authorization</a>
+	<a href="#" class="w3-bar-item w3-button">PPO issuance</a>
+      	</div>
+	</div>
+
+	<div="dta">
+      	<div class="w3-dropdown-hover">
+      	<button class="w3-button">Treasury & Accounts</button>
+      	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Directorate</a>
+        <a href="#" class="w3-bar-item w3-button">District</a>
+	<a href="#" class="w3-bar-item w3-button">Sub Treasury</a>
+      	</div>
+	</div>
+	
+</div>
+<!--------------------------kia-linked-pages------------------------->
+<!-------------------------------div id="Scroll_Group_2" class="Rectangle_7"---------------------->
+	<div class="container">
+       <div class="row">
+            <div class="col-md-12">
+                <h4 class="text-center">Computerisation of Pension Settlement and Management Information Sytem, AG Office, Telangana.</h4>
+                <h4 class="text-center">Revised Pension Forms
+                </h4>
+                <h5 class="text-center">Part I<br />
+                    Information to be furnished by the Government Servant / Applicant
+                </h5>
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label for="Text_Name">
+                    1. (a) Name of the Government servant
+:<span style="color: Red">*</span></label>
+            </div>
+
+            <div class="col-md-6">
+                <input type="text" id="Text_Name" class="form-control" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label for="Text_Post">
+                    (b) Post held
+:<span style="color: Red">*</span></label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="Text_Post" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label for="Text_applicant" class="col-form-label">
+                    2. (a) Name of the Applicant
+(in case of death of Government servant)
+:<span style="color: Red">*</span></label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Text_applicant" />
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label for="Text_postappli" class="col-form-label">
+                    (b) Post held
+
+:<span style="color: Red">*</span></label>
+            </div>
+
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Text_postappli" />
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-md-6">
+                <label for="Text_Paddress" class="col-form-label">
+                    3.	Permanent Address
+:<span style="color: Red">*</span></label>
+            </div>
+
+            <div class="col-md-6">
+                <textarea class="form-control" rows="3" id="Text_Paddress"></textarea>
+            </div>
+        </div>
+
+        <div class="row form-group">
+
+            <div class="col-md-6">
+                <label for="Text_Empid" class="col-form-label">
+                    4.	Employee I.D Number
+
+:<span style="color: Red">*</span></label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Text_Empid" />
+            </div>
+
+        </div>
+
+
+        <div class="row form-group">
+
+            <div class="col-md-6">
+                <label for="Text_gpf" class="col-form-label">
+                    S. GPF Account Number
+:<span style="color: Red">*</span></label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Text_gpf" />
+            </div>
+
+        </div>
+
+        <div class="row form-group">
+
+            <div class="col-md-6">
+                <label for="Text_Pan" class="col-form-label">
+                    6. PAN Card No
+
+:<span style="color: Red">*</span></label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Text_Pan" />
+            </div>
+
+        </div>
+
+        <div class="row form-group">
+
+            <div class="col-md-6">
+                <label for="Text_Aadhar" class="col-form-label">
+                    7. Aadhaar No.
+:<span style="color: Red">*</span></label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" onkeypress="return CheckDecimal(event)"
+                            MaxLength="12" class="form-control" id="Text_Aadhar" />
+            </div>
+
+        </div>
+
+
+        <div class="row form-group">
+
+            <div class="col-md-6">
+                <label for="Text_BankMICR" class="col-form-label">
+                    8. IFS code and MICR code of the Bank where payment is opted 
+
+:<span style="color: Red">*</span></label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Text_BankMICR" />
+            </div>
+
+        </div>
+
+        <div class="row form-group">
+
+            <div class="col-md-6">
+                <label for="Text_Adressafter_retire" class="col-form-label">
+                    9. Address after retirement
+:<span style="color: Red">*</span></label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Text_Adressafter_retire" />
+            </div>
+
+        </div>
+        <div class="row form-group">
+
+            <div class="col-md-12">
+                <label for="Text_pension" class="col-form-label">
+                    <strong>10. Commutation of Pension
+
+:</strong><span style="color: Red">*</span></label>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="Radio_1944" class="col-form-label">
+                            (a)	whether willing to commute *40% of
+monthly pension, subject to A.P Civil
+Pensions (Commutation) Rules, 1944
+
+:<span style="color: Red">*</span></label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="radio" id="Yes" name="Yes" value="Yes" />
+                        <label for="Yes">Yes</label>
+                       <!-- <input type="radio" id="No" name="Yes" value="No">
+                        <label for="No">No</label>-->
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Radio_YN" class="col-form-label">
+                            (b)	If the answer is 'NO', specify the fraction less than *40% :<br />
+
+                            <span style="color: Red">*</span></label>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea class="form-control" id="Textarea6" rows="2" disabled="true"></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="Radio_YN" class="col-form-label">
+                            'Note :-Consequent on the issue of orders in G.O.Ms.No.158 Fin &Pig (FW Pen I) Dept., dt 16.9.99 enhancing the maximum pension that can be commuted upto 40% w.ef 1.4.99. this 1/3rd was to be changed as 40% at both the places.'
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row form-group">
+
+            <div class="col-md-6">
+                <label for="Text_pension_authority" class="col-form-label">
+                    11. (a) Name of the Pension Disbursing Authority i.e., 
+Treasury officer/Pension Payment Officer
+
+
+:<span style="color: Red">*</span></label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Text_pension_authorit" />
+            </div>
+
+
+
+
+        </div>
+        <div class="row form-group">
+
+            <div class="col-md-12">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>
+                                <label for="Text_payingbank" class="col-form-label">
+                                    (b) Name of the paying Bank from where pension	
+payment is desired by the pensioner/family 
+pensioner/family pensioner gratuitant.
+
+:<span style="color: Red">*</span></label></td>
+                            <td>Name of the Bank Account and Branch	</td>
+                            <td>S.B Account No.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" id="txtpbank" /></td>
+                            <td>
+                      
+
+                              <select id="banks" name="banks">
+  <option value="SBI">SBI</option>
+  <option value="SBH">SBH</option>
+  <option value="BOI">BOI</option>
+  <option value="Axis Bank">Axis Bank</option>
+  <option value="HDFC Bank">HDFC Bank</option>
+  <option value="Indian Bank">Indian Bank</option>
+  <option value="Central Bank">Central Bank</option>
+  <option value="Dena Bank">Dena Bank</option>
+  <option value="Andhra Bank">Andhra Bank</option>
+  <option value="Syndicate Bank">Syndicate Bank</option></select>
+                    <input type="text" class="form-control" id="Text11" />
+</td><td>
+                                <input type="text" class="form-control" id="txtNBB" /></td>
+                            <td>
+                                <input type="text" class="form-control" onkeypress="return CheckDecimal(event)"
+                             id="txtSBAccount" /></td>
+                        </tr>
+                    </thead>
+                </table>
+
+            </div>
+
+
+        </div>
+        <div class="row form-group">
+
+            <div class="col-md-12">
+                <label for="Text_pension_authority">
+                    <strong>12. List of family members:</strong><span style="color: Red"><strong>*</strong></span></label>
+            </div>
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">(a)</th>
+                            <th scope="col">(b)</th>
+                            <th scope="col">(c)</th>
+                            <th scope="col">(d)</th>
+                            <th scope="col" colspan="2">Marital/Employment status of the children of the applicant/ deceased Government servant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SL No.</td>
+                            <td>
+                                <label>Name of the family member</label></td>
+                            <td>
+                                <label>Date of Birth</label></td>
+                            <td>
+                                <label>Relationship with Government Servant</label></td>
+                            <td>
+                                <label>Married or unmarried <br />Date of Marriage if married:</label></td>
+                            <td>
+                                <label>Whether employed or not<br /> Give details of employment</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control" onkeypress="return CheckDecimal(event)"
+                            id="Txt_sno" /></td>
+
+                            <td>
+                                <input type="text" class="form-control" id="Txt_Name" /></td>
+
+                            <td>
+                                <input type="date" class="form-control" id="Txt_DOB" /></td>
+
+                            <td>
+                             <input type="radio" id="Radio2" name="Son" value="Spouse" />
+                                <label for="Spouse">Spouse</label>
+                                <input type="radio" id="Radio6" name="Son" value="Son" />
+                                <label for="Son">Son</label><br />
+                                
+                                 <input type="radio" id="Radio7" name="Son" value="Daughter" />
+                                <label for="Daughter">Daughter</label>
+                                <input type="radio" id="Radio8" name="Son" value="Father" />
+                                <label for="Father">Father</label><br />
+                                
+                                 <input type="radio" id="Radio9" name="Son" value="Mother" />
+                                <label for="Mother">Mother</label>
+                                <input type="radio" id="Radio10" name="Son" value="Sister" />
+                                <label for="Sister">Sister</label><br />
+                                
+                                <input type="radio" id="Radio11" name="Son" value="Brother" />
+                                <label for="Brother">Brother</label>
+                                <input type="radio" id="Radio12" name="Son" value="Guardian" />
+                                <label for="Guardian">Guardian</label><br />
+                                
+                              
+                            </td>
+                            <td>
+                                <input type="radio" id="Radio1" name="Y" value="Y" />
+                                <label for="Y">Yes</label>
+                                <input type="radio" id="Radio4" name="Y" value="N" />
+                                <label for="N">No</label><br />
+                                <input type="date" class="form-control" id="Textarea4" />
+                            </td>
+                            <td>
+                                <input type="radio" id="Radio3" name="Yes" value="Yes" />
+                                <label for="Yes">Yes</label>
+                                <input type="radio" id="Radio5" name="Yes" value="No" /><label for="No">No</label><br />
+                                <input type="text" class="form-control" id="Textarea5" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+         <div class="row form-group">
+
+            <div class="col-md-12">
+                <label>
+                     <strong>Instructions:</strong></label>
+            </div>
+            
+            <div class="col-md-12">
+               <p>1. The Government servant is instructed to fill up the proforma very carefully as the data furnished is vital for sanction of family pension. He/She may note that alternations of the data furnished at a later date is not permissible.</p>
+               <p>2. The "family" for the purpose mean "wife" or "husband" as the case may be, "sons" and "unmarried daughters" as laid down in Rule 50 (12) (for Family Pension) and Rule 46(5) (for gratuity) of A.P.Revised Pension Rules 1980.</p>
+               <p>3. In case of death while in service of Government servant, the answer 'Married' in case of daughters will be understood that the daughter is already married as on the date of death of the Government servant.</p>
+            </div>
+        </div>
+         <div class="row form-group">
+
+            <div class="col-md-12">
+                <label>
+                     <strong>Declaration:</strong></label>
+            </div>
+            
+            <div class="col-md-12">
+               1. I undertake to refund the amount of Pension, Gratuity and Commutation, if it is found subsequently to be in excess of the amount to which I was entitled under the rules.<br />
+               2. I solemnly affirms that the particulars given by me in Part-1 at item 12 are correct and true to the best of my knowledge. If found false in future, l am liable for suitable action as may be taken by the Government.<br />
+               3. The particulars given above are correct and true to the best of my knowledge. If found false in future I may be liable for any action that may be taken by the Government.
+            </div>
+        </div>
+
+  
+        <div class="row form-group">
+        <div class="row">
+            <div class="col-md-2">
+                <label for="Txt_place" class="col-form-label">
+                    <strong>Place:</strong></label>
+            </div>
+            <div class="col-md-5">
+                <input type="text" class="form-control" id="Txt_place" />
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-5">
+                <label for="Txt_signature" class="col-form-label">
+                    <strong>Signature of the Employee/Government Servant
+:</strong></label>
+            </div>
+            
+            </div>
+        </div>
+
+           <div class="row form-group">
+
+            <div class="row">
+           <div class="col-md-1">
+                <label for="Txt_ho_dt" class="col-form-label">
+                    <strong>Date:</strong></label>
+            </div>
+            <div class="col-md-5">
+                <input type="date" class="form-control" id="Txt_dt" />
+            </div>
+          
+            
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Txt_signature" />
+            </div>
+            
+             </div>
+
+            
+           
+
+        </div>
+                    
+           
+
+        
+           <div class="row form-group">
+
+            <div class="col-md-12">
+                <label>
+                     <strong>To be filled by the Head of the office</strong></label>
+            </div>
+            
+            <div class="col-md-12">
+               <p>1. Applicant for pension/gratuity, etc. in Part I is received on <input type="date" class="form-control" id="Text10" />(Date to be recorded).</p>
+               <p>2. Certified that the person/persons mentioned by the Government servant/Applicant in item 12 of Part I are Legally entitled to receive the pension/ share in gratuity.</p>
+               <p>3. Guardianship certificate (to be filled in wherever necessary).</p>
+            </div>
+        </div>
+
+         <div class="row form-group">
+
+            <div class="col-md-12">
+                <label>
+                     <strong>To be filled by the Head of the office</strong></label>
+            </div>
+            
+            <div class="col-md-12">
+               <p>This is to certify that the following minors of the deceased Government Servant Late Sri/Smt<input type="text" class="form-control" id="Txt_nam" />are under the guardianship of Sri/Smt <input type="text" class="form-control" id="Text12" /></p>
+               
+            </div>
+        </div>
+          <div class="row form-group">
+
+            <div class="col-md-12">
+              
+            </div>
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">SNo</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Date of Birth</th>
+                            <th scope="col">Relationship</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                        <tr>
+                         <td>
+                                <input type="text" class="form-control" value="1" id="Txt_wSno" /></td>
+                            
+                            <td>
+                                <input type="text" class="form-control" id="Txt_wrelation" /></td>
+                                <td>
+                                <input type="date" class="form-control" id="Txt_wDob" /></td>
+
+                            <td>
+                              <input type="radio" id="Radio41" name="Son" value="Spouse" />
+                                 <label for="Spouse">Spouse</label>
+                                <input type="radio" id="Radio13" name="Son" value="Son" />
+                                <label for="Son">Son</label><br />
+                                
+                                 <input type="radio" id="Radio14" name="Son" value="Daughter" />
+                                <label for="Daughter">Daughter</label>
+                                <input type="radio" id="Radio15" name="Son" value="Father" />
+                                <label for="Father">Father</label><br />
+                                
+                                 <input type="radio" id="Radio16" name="Son" value="Mother" />
+                                <label for="Mother">Mother</label>
+                                <input type="radio" id="Radio17" name="Son" value="Sister" />
+                                <label for="Sister">Sister</label><br />
+                                
+                                <input type="radio" id="Radio18" name="Son" value="Brother" />
+                                <label for="Brother">Brother</label>
+                                <input type="radio" id="Radio19" name="Son" value="Guardian" />
+                                <label for="Guardian">Guardian</label><br />
+                            </td>
+                           
+                        </tr>
+                           <tr>
+                         <td>
+                                <input type="text" class="form-control" value="2" id="Text1" /></td>
+                            
+
+                            <td>
+                                <input type="text" class="form-control" id="Text3" /></td>
+                                <td>
+                                <input type="date" class="form-control" id="Text2" /></td>
+                            <td>
+                            <input type="radio" id="Radio42" name="Son" value="Spouse" />
+                                   <label for="Spouse">Spouse</label>
+                                <input type="radio" id="Radio20" name="Son" value="Son" />
+                                <label for="Son">Son</label><br />
+                                
+                                 <input type="radio" id="Radio21" name="Son" value="Daughter" />
+                                <label for="Daughter">Daughter</label>
+                                <input type="radio" id="Radio22" name="Son" value="Father" />
+                                <label for="Father">Father</label><br />
+                                
+                                 <input type="radio" id="Radio23" name="Son" value="Mother" />
+                                <label for="Mother">Mother</label>
+                                <input type="radio" id="Radio24" name="Son" value="Sister" />
+                                <label for="Sister">Sister</label><br />
+                                
+                                <input type="radio" id="Radio25" name="Son" value="Brother" />
+                                <label for="Brother">Brother</label>
+                                <input type="radio" id="Radio26" name="Son" value="Guardian" />
+                                <label for="Guardian">Guardian</label><br />
+                            </td>
+                           
+                        </tr>
+                           <tr>
+                         <td>
+
+                                <input type="text" class="form-control" value="3" id="Text4" /></td>
+                          
+
+                            <td>
+                                <input type="text" class="form-control" id="Text6" /></td>
+                                  <td>
+                                <input type="date" class="form-control" id="Text5" /></td>
+
+                            <td>
+                            <input type="radio" id="Radio43" name="Son" value="Spouse" />
+                                <label for="Spouse">Spouse</label>
+                                <input type="radio" id="Radio27" name="Son" value="Son" />
+                                <label for="Son">Son</label><br />
+                                
+                                 <input type="radio" id="Radio28" name="Son" value="Daughter" />
+                                <label for="Daughter">Daughter</label>
+                                <input type="radio" id="Radio29" name="Son" value="Father" />
+                                <label for="Father">Father</label><br />
+                                
+                                 <input type="radio" id="Radio30" name="Son" value="Mother" />
+                                <label for="Mother">Mother</label>
+                                <input type="radio" id="Radio31" name="Son" value="Sister" />
+                                <label for="Sister">Sister</label><br />
+                                
+                                <input type="radio" id="Radio32" name="Son" value="Brother" />
+                                <label for="Brother">Brother</label>
+                                <input type="radio" id="Radio33" name="Son" value="Guardian" />
+                                <label for="Guardian">Guardian</label><br />
+                            </td>
+                           
+                        </tr>
+                           <tr>
+                         <td>
+                                <input type="text" class="form-control" value="4" id="Text7" /></td>
+                      
+
+                            <td>
+                                <input type="text" class="form-control" id="Text9" /></td>
+
+                                      <td>
+                                <input type="date" class="form-control" id="Text8" /></td>
+
+
+                            <td>
+                            <input type="radio" id="Radio44" name="Son" value="Spouse" />
+                                 <label for="Spouse">Spouse</label>
+                                <input type="radio" id="Radio34" name="Son" value="Son" />
+                                <label for="Son">Son</label><br />
+                                
+                                 <input type="radio" id="Radio35" name="Son" value="Daughter" />
+                                <label for="Daughter">Daughter</label>
+                                <input type="radio" id="Radio36" name="Son" value="Father" />
+                                <label for="Father">Father</label><br />
+                                
+                                 <input type="radio" id="Radio37" name="Son" value="Mother" />
+                                <label for="Mother">Mother</label>
+                                <input type="radio" id="Radio38" name="Son" value="Sister" />
+                                <label for="Sister">Sister</label><br />
+                                
+                                <input type="radio" id="Radio39" name="Son" value="Brother" />
+                                <label for="Brother">Brother</label>
+                                <input type="radio" id="Radio40" name="Son" value="Guardian" />
+                                <label for="Guardian">Guardian</label><br />
+                            </td>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+            <div class="row form-group">
+        <div class="row">
+            <div class="col-md-2">
+                <label for="Txt_place_ho" class="col-form-label">
+                    <strong>Place:</strong></label>
+            </div>
+            <div class="col-md-5">
+                <input type="text" class="form-control" id="Txt_place_ho" />
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-5">
+                <label for="Txt_sign_ho" class="col-form-label">
+                    <strong>Signature of the Head of the Office
+:</strong></label>
+            </div>
+            
+            </div>
+        </div>
+
+           <div class="row form-group">
+
+            <div class="row">
+           <div class="col-md-1">
+                <label for="Txt_ho_dt" class="col-form-label">
+                    <strong>Date:</strong></label>
+            </div>
+            <div class="col-md-5">
+                <input type="date" class="form-control" id="Txt_ho_dt" />
+            </div>
+          
+            
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Txt_sign_ho" />
+            </div>
+            
+             </div>
+
+            
+           
+
+        </div>
+
+<!--------------------------------------->
+<!-----------------/div------------------------>
+</body>
+</html>
